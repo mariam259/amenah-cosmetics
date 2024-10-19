@@ -62,24 +62,17 @@ export default function Nav() {
                 <Link
                   key={path}
                   to={path}
-                  spy={true}
-                  smooth={true}
-                  // offset={-100}
+                  spy="true"
+                  smooth="true"
                   className="block text-base text-amenah_blue hover:text-amenah_pink "
                 >
                   {title}
                 </Link>
               ))}
             </ul>
-            {/* btn for large screen */}
-            {/* <div className="space-x-12 hidden lg:flex items-center">
-              <a href="/"> Login</a>
-            </div> */}
+
             <Link to="/">
-              <a
-                href=""
-                className="text-2xl font-bold flex items-center space-x-3 "
-              >
+              <div className="text-2xl font-bold flex items-center space-x-3 ">
                 {" "}
                 <span className="text-amenah_blue pt-2 hover:text-amenah_pink">
                   آمِنَة
@@ -89,7 +82,7 @@ export default function Nav() {
                   alt="Logo"
                   className="w-10 inline-block items-center"
                 />
-              </a>
+              </div>
             </Link>
             {/* mobile menu */}
             <div className="md:hidden">
@@ -108,7 +101,7 @@ export default function Nav() {
 
           {/* mobile menu items  */}
           <div
-            className={`space-y-4 px-4 mt-16 py-7 font-semibold bg-amenah_mint text-right ${
+            className={`space-y-4 px-9 mt-16 py-7 font-semibold bg-amenah_mint text-right ${
               isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
             }`}
           >
@@ -116,8 +109,8 @@ export default function Nav() {
               <Link
                 key={path}
                 to={path}
-                spy={true}
-                smooth={true}
+                spy="true"
+                smooth="true"
                 // offset={-100}
                 className="block text-base text-amenah_blue hover:text-amenah_pink "
               >

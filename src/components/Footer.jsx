@@ -2,7 +2,7 @@ import React from "react";
 import footer from "../assets/5.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import { MdComputer } from "react-icons/md";
+// import { MdComputer } from "react-icons/md";
 import logo from "../assets/icon.jpg";
 import { Link } from "react-router-dom";
 const footerBg = {
@@ -77,28 +77,31 @@ export default function Footer() {
                 {/* </div> */}
                 <ul className="flex flex-col gap-3">
                   <li>
-                    <Link to="/products">
-                      <a
-                        href=""
-                        className="hover:text-amenah_pink duration-200"
-                      >
-                        {" "}
-                        المنتجات
-                      </a>
-                    </Link>
+                    <a href="/" className="hover:text-amenah_pink duration-200">
+                      الرئيسية
+                    </a>
                   </li>
                   <li>
-                    <a href="" className="hover:text-amenah_pink duration-200">
+                    <a
+                      href="/about"
+                      className="hover:text-amenah_pink duration-200"
+                    >
                       من نحن
                     </a>
                   </li>
                   <li>
-                    <a href="" className="hover:text-amenah_pink duration-200">
+                    <a
+                      href="/categories"
+                      className="hover:text-amenah_pink duration-200"
+                    >
                       الفئات
                     </a>
                   </li>
                   <li>
-                    <a href="" className="hover:text-amenah_pink duration-200">
+                    <a
+                      href="/faq"
+                      className="hover:text-amenah_pink duration-200"
+                    >
                       {" "}
                       الأسئلة الشائعة
                     </a>

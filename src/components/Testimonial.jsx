@@ -57,15 +57,15 @@ export default function Testimonial() {
                   <div className="flex flex-col gap-4 p-8 shadow-lg mx-4 rounded-xl bg-gray-100">
                     <div className="flex justify-end items-center gap-5">
                       {/* img of testimonial */}
-                      {/* <img
+                      <img
                         src={item.img}
                         alt="testimonial"
                         className="w-16 h-16 rounded-full "
-                      /> */}
+                      />
                       <div className="text-right">
-                        <p className="text-xl font-bold text-amenah_blue">
+                        {/* <p className="text-xl font-bold text-amenah_blue">
                           {item.name}
-                        </p>
+                        </p> */}
                         <p className="text-sm text-gray-500">{item.text}</p>
                       </div>
                     </div>

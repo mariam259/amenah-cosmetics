@@ -1,4 +1,4 @@
-import body from "../assets/body.png";
+import body from "../assets/icon.jpg";
 
 export const TestimonialData = [
   {

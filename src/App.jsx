@@ -6,18 +6,29 @@ import FAQ from "./components/FAQ";
 import Product from "./components/Product";
 import Testimonial from "./components/Testimonial";
 import Categories from "./components/Categories";
+import Layout from "./components/Layout";
 // import Hero from "./components/Hero";
 
 const BrowserRouter = createBrowserRouter([
-  { path: "/", element: <Home /> },
   {
-    path: "/about",
-    element: <About />,
+    path: "/",
+    element: <Home />,
   },
-  { path: "/faq", element: <FAQ /> },
-  { path: "/products", element: <Product /> },
-  { path: "/testimonials", element: <Testimonial /> },
-  { path: "/categories", element: <Categories /> },
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "about",
+        element: <About />,
+      },
+
+      { path: "faq", element: <FAQ /> },
+      { path: "products", element: <Product /> },
+      { path: "testimonials", element: <Testimonial /> },
+      { path: "categories", element: <Categories /> },
+    ],
+  },
 ]);
 
 function App() {

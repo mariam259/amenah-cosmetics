@@ -1,11 +1,11 @@
 import React from "react";
 import { Accordion } from "flowbite-react";
 import img from "../assets/faq.png";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 export default function FAQ() {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <div
         className="bg-cover bg-center h-screen w-full pt-20"
         style={{ backgroundImage: `url(${img})` }}
